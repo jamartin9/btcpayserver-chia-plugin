@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <LangVersion>12</LangVersion>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>14</LangVersion>
     <Configurations>Release;Altcoins-Debug</Configurations>
     <Platforms>AnyCPU</Platforms>
     <Nullable>enable</Nullable>
@@ -11,7 +11,7 @@
   <PropertyGroup>
     <Product>Chia</Product>
     <Description>Add Chia support to your BTCPay Server</Description>
-    <Version>1.0.4</Version>
+    <Version>1.0.5</Version>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
@@ -41,9 +41,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="chia-dotnet" Version="4.0.0" />
+    <PackageReference Include="chia-dotnet" Version="4.1.0" />
     <PackageReference Include="chia-dotnet-clvm" Version="0.1.2" />
-    <PackageReference Include="Nethermind.Crypto.Bls" Version="1.0.4" />
+    <PackageReference Include="Nethermind.Crypto.Bls" Version="1.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="BTCPayServer.Plugins.Chia.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

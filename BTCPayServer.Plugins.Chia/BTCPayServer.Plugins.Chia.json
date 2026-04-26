@@ -1,0 +1,17 @@
+{
+  "Identifier": "BTCPayServer.Plugins.Chia",
+  "Name": "Chia",
+  "Version": "1.0.5",
+  "Description": "Chia integration",
+  "SystemPlugin": false,
+  "Dependencies": [
+    {
+      "Identifier": "BTCPayServer",
+      "Condition": ">=2.3.7"
+    }
+  ],
+  "Documentation": null,
+  "Source": null,
+  "Author": null,
+  "AuthorLink": null
+}
